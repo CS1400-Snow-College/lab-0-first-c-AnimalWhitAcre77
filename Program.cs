@@ -1,0 +1,46 @@
+﻿//This program runs several tutorial blocks of code, printing results to the terminal
+
+Console.Clear();
+
+//Run your first program
+Console.WriteLine("Hello, World!");
+
+//Declare and use variables
+string aFriend = "Bill";
+Console.WriteLine($"Hello {aFriend}");
+aFriend = "Maira";
+Console.WriteLine("Hello " + aFriend);
+
+//Work with strings
+string firstFriend = "Maria";
+string secondFriend = "Sage";
+Console.WriteLine($"My friends are {firstFriend} and {secondFriend}");
+
+Console.WriteLine($"The name {firstFriend} has {firstFriend.Length} letters.");
+Console.WriteLine($"The name {secondFriend} has {secondFriend.Length} letters.");
+
+//Remove whitespace from strings
+string greeting = "      Hello World!       ";
+Console.WriteLine($"[{greeting}]");
+
+string trimmedGreeting = greeting.TrimStart();
+Console.WriteLine($"[{trimmedGreeting}]");
+
+trimmedGreeting = greeting.TrimEnd();
+Console.WriteLine($"[{trimmedGreeting}]");
+
+trimmedGreeting = greeting.Trim();
+Console.WriteLine($"[{trimmedGreeting}]");
+
+//Search and replace text in strings
+string sayHello = "Hello World!";
+Console.WriteLine(sayHello);
+sayHello = sayHello.Replace("Hello", "Greetings"); //Swap all instances of "Hello" with "Greetings" in sayHello
+Console.WriteLine(sayHello);
+
+Console.WriteLine(sayHello.ToUpper());
+Console.WriteLine(sayHello.ToLower());
+
+string songLyrics = "You say goodbye, and I say hello";
+Console.WriteLine(songLyrics.StartsWith("You"));
+Console.WriteLine(songLyrics.EndsWith("greetings"));
